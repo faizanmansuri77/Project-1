@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region to deploy resources"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 variable "environment" {
@@ -35,19 +35,19 @@ variable "availability_zones" {
 }
 
 variable "db_name" {
-  description = "Name of the database"
+  description = "project_1_db"
   type        = string
   default     = "javaapp"
 }
 
 variable "db_username" {
-  description = "Database master username"
+  description = "admin"
   type        = string
   sensitive   = true
 }
 
 variable "db_password" {
-  description = "Database master password"
+  description = "redhat123"
   type        = string
   sensitive   = true
 }
@@ -55,11 +55,11 @@ variable "db_password" {
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t3.micro"
+  default     = "c7i-flex.large"
 }
 
 variable "key_name" {
-  description = "Name of the SSH key pair"
+  description = "first-key"
   type        = string
 }
 
